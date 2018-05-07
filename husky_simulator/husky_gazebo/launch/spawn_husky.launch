@@ -25,10 +25,15 @@ ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSI
 -->
 <launch>
 
+  <!-- <arg name="x" default="5.59"/>
+  <arg name="y" default="-19.49"/>
+  <arg name="z" default="0.0"/> -->
+
   <arg name="laser_enabled" default="true"/>
   <arg name="ur5_enabled" default="false"/>
   <arg name="kinect_enabled" default="false"/>
-  <arg name="robot_initial_pose" default="$(optenv ROBOT_INITIAL_POSE)"/>
+  <!-- <arg name="robot_initial_pose" default="$(optenv ROBOT_INITIAL_POSE)"/> -->
+  <arg name="robot_initial_pose" default="-x 5.59 -y -19.49 -z 0.0"/>
   <arg name="husky_gazebo_description" default="$(optenv HUSKY_GAZEBO_DESCRIPTION)"/>
   <arg name="ur5_control_yaml_file" default="$(find husky_control)/config/control_ur5.yaml"/>
 
